@@ -70,3 +70,7 @@ management:
       exposure:
         include: health, refresh
 
+# JWT 설정
+jwt:
+  secret: ${jwtSecret}
+  validSeconds: ${jwtValidSeconds}
