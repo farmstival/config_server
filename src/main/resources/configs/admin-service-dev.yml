@@ -12,4 +12,4 @@ spring:
   # 타임리프 설정
   thymeleaf:
     cache: false
-    prefix: file:/src/main/resources/templates/
+    prefix: file:src/main/resources/templates/
