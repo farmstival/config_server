@@ -4,7 +4,7 @@ server:
 spring:
   cloud:
     gateway:
-      default-filters: #필터 추가
+      default-filters:
         - DedupeResponseHeader=Access-Control-Allow-Origin Access-Control-Allow-Credentials
       globalcors:
         corsConfigurations:
