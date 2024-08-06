@@ -64,4 +64,4 @@ jwt:
 
 cors:
   allow:
-    origins: http://joyfarm.xyz
+    origins: http://joyfarm.xyz #개발 설정과 실제 설정 분리, 요청이 너무 몰리지 않게 하기 위함
