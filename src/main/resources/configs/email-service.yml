@@ -54,6 +54,3 @@ eureka:
     fetchRegistry: true
     serviceUrl:
       defaultZone: ${eurekaHost}/eureka/
-
-email:
-  secret: ${secretKey}
