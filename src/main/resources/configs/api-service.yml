@@ -1,5 +1,5 @@
 server:
-  port: 3001 #포트
+  port: 3001
 
 spring:
   # 데이터베이스 설정
