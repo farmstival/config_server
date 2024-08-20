@@ -38,16 +38,16 @@ spring:
   thymeleaf:
     cache: true
     prefix: classpath:/templates/
-  
+
   # redis 설정 추가
   session:
     store-type: redis
     redis:
       namespace: spring:session
   data:
-     redis:
-       host: ${redis.host}
-       port: ${redis.port}
+    redis:
+      host: ${redis.host}
+      port: ${redis.port}
 
 # 로거 설정
 logging:
