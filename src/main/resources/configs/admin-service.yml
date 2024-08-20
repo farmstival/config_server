@@ -44,10 +44,10 @@ spring:
     store-type: redis
     redis:
       namespace: spring:session
-    data:
-      redis:
-        host: ${redis.host}
-        port: ${redis.port}
+  data:
+    redis:
+      host: ${redis.host}
+      port: ${redis.port}
 
 # 로거 설정
 logging:
