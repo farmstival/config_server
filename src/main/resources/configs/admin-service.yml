@@ -2,18 +2,9 @@ server:
   port: 3002
   servlet:
     cookie:
-      name: SESSIONID
+      name: SESSIONID #세션 설정 추가
 
 spring:
-  session:
-    store-type: redis
-    redis:
-      namespace: spring:session
-  data:
-    redis:
-      host: ${redis.host}
-      port: ${redis.port}
-
   # 데이터베이스 설정
   datasource:
     driverClassName: '{cipher}920de040b98d5170c36316dd674bb9822a4804f8153550d020220aaa0ede5f7bc05f86ed6b4d4ffdaa0eb4a554fd71ec'
@@ -47,6 +38,16 @@ spring:
   thymeleaf:
     cache: true
     prefix: classpath:/templates/
+
+  # redis 설정 추가
+  session:
+    store-type: redis
+    redis:
+      namespace: spring:session
+  data:
+    redis:
+      host: ${redis.host}
+      port: ${redis.port}
 
 # 로거 설정
 logging:
