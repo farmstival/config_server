@@ -1,5 +1,8 @@
 server:
   port: 3002
+  servlet:
+    cookie:
+      name: SESSIONID #세션 설정 추가
 
 spring:
   # 데이터베이스 설정
@@ -17,7 +20,7 @@ spring:
         format_sql: true
         use_sql_comments: true
     hibernate:
-      ddlAuto: ${ddl.auto}
+      ddlAuto: create
 
   # 파일 업로드 용량 설정
   servlet:
@@ -35,6 +38,16 @@ spring:
   thymeleaf:
     cache: true
     prefix: classpath:/templates/
+
+  # redis 설정 추가
+  session:
+    store-type: redis
+    redis:
+      namespace: spring:session
+    data:
+      redis:
+        host: ${redis.host}
+        port: ${redis.port}
 
 # 로거 설정
 logging:
