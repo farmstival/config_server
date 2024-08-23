@@ -89,10 +89,3 @@ jwt:
   secret: ${jwtSecret}
   validSeconds: ${jwtValidSeconds}
 
-google:
-  oauth2:
-    client-id: ${google.client-id}
-    client-secret: ${google.client-secret}
-    refresh-token: ${google.refresh-token}
-    property-id: ${google.property-id}
-    token-uri: https://oauth2.googleapis.com/token
