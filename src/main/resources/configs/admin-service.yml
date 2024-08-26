@@ -88,3 +88,4 @@ management:
 jwt:
   secret: ${jwtSecret}
   validSeconds: ${jwtValidSeconds}
+
