@@ -2,6 +2,11 @@ server:
   port: 3001
 
 spring:
+  data:
+    redis:
+      host: ${redis.host}
+      port: ${redis.port}
+
   # 데이터베이스 설정
   datasource:
     driverClassName: '{cipher}920de040b98d5170c36316dd674bb9822a4804f8153550d020220aaa0ede5f7bc05f86ed6b4d4ffdaa0eb4a554fd71ec'
@@ -61,7 +66,7 @@ management:
 jwt:
   secret: ${jwtSecret}
   validSeconds: ${jwtValidSeconds}
-
+  
 cors:
   allow:
     origins: http://joyfarm.xyz #개발 설정과 실제 설정 분리, 요청이 너무 몰리지 않게 하기 위함
@@ -73,3 +78,4 @@ file:
     url: /upload/
 
 secretKey: ${secret}
+
