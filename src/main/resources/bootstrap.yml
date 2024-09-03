@@ -14,7 +14,7 @@ spring:
         native:
           search-locations: classpath:/configs
         git:
-          uri: https://github.com/yonggyo1125/project_config.git
+          uri: https://github.com/project34plus/project5_config.git
           searchPaths: configs
           default-label: master
 
